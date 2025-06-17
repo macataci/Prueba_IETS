@@ -1,0 +1,7 @@
+#install.packages("heemod")
+library(heemod)
+library(ggplot2)
+source("R/00_transition_matrices.R")
+source("R/01_strategies.R")
+source("R/02_run_model.R")
+source("R/03_sensitivity_analysis.R")
