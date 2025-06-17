@@ -30,4 +30,5 @@ scripts que llevaron a la generación de las figuras y resultados asociados a la
 prueba.
 
 Aunque para esta ocasión no se requirió de archivos de datos, ni se almacenaron 
-resultados diferentes a figuras, se tienen las carpetas *data* y *output* en caso de que estos datos sean manejados o almacenados en el futuro. \# Prueba_IETS
+resultados diferentes a figuras, se tienen las carpetas *data* y *output* 
+en caso de que estos datos sean manejados o almacenados en el futuro. 
