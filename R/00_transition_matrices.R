@@ -6,7 +6,8 @@
 #   - The disease states names used in the model
 #   - Time variables related to each state
 #   - Transition probabilities between states
-#   - Transition matrices for the two treatments
+#   - Transition matrices (TM) for the two treatments
+# Based on the TM, generates the associated graph for each treatment
 #
 # Author: Maria Camila Tavera Cifuentes
 # Date: 13/06/2025
