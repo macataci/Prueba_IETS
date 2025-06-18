@@ -4,7 +4,7 @@
 
 Este repositorio presenta la solución a la Prueba Práctica para el cargo de Simulador/Modelador del Instituto de Evaluación Tecnológica en Salud (IETS), por parte de Maria Camila Tavera Cifuentes, haciendo uso del paquete [*heemod*](https://cran.r-project.org/web/packages/heemod/index.html).
 
-La prueba presenta una situación de un fenómeno en salud teórico y busca que el aplicante genere el modelo asociado y los desarrollos pertinentes para responder las preguntas planteadas. Se puede encontrar más detalle respecto al caso planteado en `docs/Prueba_Pratica_Simulador.docx`.
+La prueba presenta una situación de un fenómeno en salud teórico y busca que el aplicante genere el modelo asociado y los desarrollos pertinentes para responder las preguntas planteadas. Se puede encontrar más detalle respecto al caso planteado en `docs/Prueba_Practica_Simulador.docx`.
 
 A continuación se presenta la estructura del proyecto.
 
@@ -28,7 +28,7 @@ Aunque para esta ocasión no se requirió cargar archivos de datos, ni se almace
 
 ## Instrucciones para correr los scripts
 
-En el archivo `main.R` se cargan las librerias necesarias y se ejecutan, en orden, todos los scipts del proyecto. Por lo tanto, si se corre este archivo completo, se generarán automáticamente todas las figuras de resultados en la carpeta `figs`.
+En el archivo `main.R` se cargan las librerias necesarias y se ejecutan, en orden, todos los scipts del proyecto. Sin embargo, están comentadas las lineas de código que guardan las figuras. 
 
 Ahora bien, si el usuario prefiere ejecutar cada script de forma individual, debe primero cargar las librerías indicadas en `main.R` y luego correr los scripts uno a uno, empezando por `00_transition_matrices.R` y siguiendo el orden númerico ascendente hasta `03_sensitivity_analysis.R`.
 
