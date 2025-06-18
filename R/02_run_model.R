@@ -16,7 +16,6 @@
 # 1. Run the model
 # ----------------------------------------------------------
 
-
 res_mod <- run_model(
   tratamiento_1 = strat_treat1,
   tratamiento_2 = strat_treat2,

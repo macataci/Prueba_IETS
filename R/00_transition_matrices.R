@@ -32,11 +32,9 @@ tC <- 2 * 7 #  2 weeks converted to days
 # Average survival time (S state)
 tS <- 10 * 365 # 10 years converted to days
 
-
 # ----------------------------------------------------------
 # 3. Define transition probabilities
 # ----------------------------------------------------------
-
 
 # Definition of parameters
 param <- define_parameters(
@@ -66,11 +64,9 @@ param <- define_parameters(
   qlS2 = 0.04 # Quality of life reduced in S state for Treatment 2
 )
 
-
 # ----------------------------------------------------------
 # 4. Define transition matrices for each treatment
 # ----------------------------------------------------------
-
 
 # Transition matrix for Treatment 1
 mat_treat1 <- define_transition(
@@ -81,8 +77,6 @@ mat_treat1 <- define_transition(
   state_names = states_n
 )
 
-
-
 # Transition matrix for Treatment 2
 mat_treat2 <- define_transition(
   pDD, pDC, 0, 0,
@@ -91,8 +85,6 @@ mat_treat2 <- define_transition(
   0, 0, 0, 1,
   state_names = states_n
 )
-
-
 
 # ----------------------------------------------------------
 # 5. Plot transition graphs
