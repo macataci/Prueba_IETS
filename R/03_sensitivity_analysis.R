@@ -12,9 +12,7 @@
 # Date: 13/06/2025
 ############################################################
 
-# ----------------------------------------------------------
-# 1. Define the DSA parameters and their ranges
-# ----------------------------------------------------------
+# 1. Define the DSA parameters and their ranges----------------------------------------------------------
 
 # Parameter values with +-10%
 sa <- define_dsa(
@@ -26,18 +24,14 @@ sa <- define_dsa(
   pCM2, 0.135, 0.165,
 )
 
-# ----------------------------------------------------------
-# 2. Run the DSA
-# ----------------------------------------------------------
+# 2. Run the DSA----------------------------------------------------------
 
 res_dsa <- run_dsa(
   model = res_mod,
   dsa = sa
 )
 
-# ----------------------------------------------------------
-# 3. Plot DSA results: Treatment 1
-# ----------------------------------------------------------
+# 3. Plot DSA results: Treatment 1----------------------------------------------------------
 
 # Uncomment to save as PNG
 # png("figs/03_dsa_treat1.png", width = 650, height = 400)
@@ -57,9 +51,7 @@ plot(res_dsa,
 # Uncomment when saving as PNG
 # dev.off()
 
-# ----------------------------------------------------------
-# 4. Plot DSA results: Treatment 2
-# ----------------------------------------------------------
+# 4. Plot DSA results: Treatment 2----------------------------------------------------------
 
 # Uncomment to save as PNG
 # png("figs/03_dsa_treat2.png", width = 650, height = 400)
@@ -79,9 +71,7 @@ plot(res_dsa,
 # Uncomment when saving as PNG
 # dev.off()
 
-# ----------------------------------------------------------
-# 5. Plot DSA results: Difference between Treatments
-# ----------------------------------------------------------
+# 5. Plot DSA results: Difference between Treatments----------------------------------------------------------
 
 # Uncomment to save as PNG
 # png("figs/03_dsa_diff.png", width = 650, height = 400)
@@ -101,7 +91,3 @@ plot(res_dsa,
 
 # Uncomment when saving as PNG
 # dev.off()
-
-############################################################
-# End of 03_sensitivity_analysis.R
-############################################################
