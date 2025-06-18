@@ -1,4 +1,4 @@
-############################################################
+#-------------------------------------------------------------------#
 # 00_transition_matrices.R
 #
 # Description:
@@ -11,14 +11,14 @@
 #
 # Author: Maria Camila Tavera Cifuentes
 # Date: 13/06/2025
-############################################################
+#-------------------------------------------------------------------#
 
-# 1. Define disease state names----------------------------------------------------------
+# 1. Define disease state names--------------------------------------
 
 # D state, C state, S state and M state
 states_n <- c("Desarrollo", "Crisis", "Sobrevivencia", "Muerte")
 
-# 2. Define time variables (in days)---------------------------------------------------------
+# 2. Define time variables (in days)---------------------------------
 
 # Average time in disease development (mild symptoms) state (D state), in days
 tD <- 10
@@ -29,7 +29,7 @@ tC <- 2 * 7 #  2 weeks converted to days
 # Average time in survival state (S state), in days
 tS <- 10 * 365 # 10 years converted to days
 
-# 3. Define transition probabilities----------------------------------------------------------
+# 3. Define transition probabilities---------------------------------
 
 # Definition of parameters
 param <- define_parameters(
@@ -59,7 +59,7 @@ param <- define_parameters(
   qlS2 = 0.04 # Quality of life reduced in S state for Treatment 2
 )
 
-# 4. Define transition matrices for each treatment----------------------------------------------------------
+# 4. Define transition matrices for each treatment-------------------
 
 # Transition matrix for Treatment 1
 mat_treat1 <- define_transition(
@@ -79,12 +79,12 @@ mat_treat2 <- define_transition(
   state_names = states_n
 )
 
-# 5. Plot transition graphs----------------------------------------------------------
+# 5. Plot transition graphs------------------------------------------
 
 plot(mat_treat1, relsize = 0.78)
 plot(mat_treat2, relsize = 0.78)
 
-# 6. Save transition graphs with numbers instead of variables-----------------------------------------------------------
+# 6. Save transition graphs with numbers instead of variables--------
 
 # Uncomment to save the graph for Treatment 1
 # mat_treat1 <- define_transition(

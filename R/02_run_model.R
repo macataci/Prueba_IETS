@@ -1,4 +1,4 @@
-############################################################
+#-------------------------------------------------------------------#
 # 02_run_model.R
 #
 # Description:
@@ -10,9 +10,9 @@
 #
 # Author: Maria Camila Tavera Cifuentes
 # Date: 13/06/2025
-############################################################
+#-------------------------------------------------------------------#
 
-# 1. Run the model----------------------------------------------------------
+# 1. Run the model-----------------------------------------------------------
 
 res_mod <- run_model(
   tratamiento_1 = strat_treat1,
@@ -29,7 +29,7 @@ summary(res_mod)
 # Create vector with yearly time points for vertical lines
 annual_lines <- seq(365, res_mod$cycles, by = 365)
 
-# 2. Plot: Accumulated Quality of Life----------------------------------------------------------
+# 2. Plot: Accumulated Quality of Life----------------------------------------
 
 # Uncomment to save as PNG
 # png("figs/02_life_quality.png", width = 600, height = 400)
@@ -51,7 +51,7 @@ plot(res_mod, type = "values", panels = "by_value", values = "calidad_vida") +
 # Uncomment when saving as PNG
 # dev.off()
 
-# 3. Plot: Population per State (Full Time)----------------------------------------------------------
+# 3. Plot: Population per State (Full Time)-----------------------------------
 
 # Uncomment to save as PNG
 # png("figs/02_states_pop.png", width = 600, height = 400)
@@ -72,7 +72,7 @@ plot(res_mod, type = "counts") +
 # Uncomment when saving as PNG
 # dev.off()
 
-# 4. Plot: Population per State (Zoomed In: First 6 Months)----------------------------------------------------------
+# 4. Plot: Population per State (Zoomed In: First 6 Months)------------------
 
 # Uncomment to save as PNG
 # png("figs/02_states_pop_zoom.png", width = 600, height = 400)

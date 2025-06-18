@@ -1,16 +1,19 @@
-############################################################
+#-----------------------------------------------------------------------#
 # 01_strategies.R
 #
 # Description:
 # This script defines:
-#   - The disease states, including the cost and calidad_vida variablea
+#   - The disease states, including the cost and calidad_vida variables
 #   - The treatment strategies
 #
 # Author: Maria Camila Tavera Cifuentes
 # Date: 13/06/2025
-############################################################
+#-----------------------------------------------------------------------#
 
-# 1. Define states----------------------------------------------------------
+# 1. Define states-------------------------------------------------------
+
+# Even though no cost is given in the instructions, this variable must be
+# included in order to run the model
 
 # D state
 sD <- define_state(
@@ -42,7 +45,7 @@ sM <- define_state(
   calidad_vida = qlmax - 1
 )
 
-# 2. Define treatment strategies----------------------------------------------------------
+# 2. Define treatment strategies-----------------------------------------
 
 # Strategy for Treatment 1
 strat_treat1 <- define_strategy(
