@@ -4,7 +4,7 @@
 
 Este repositorio presenta la solución a la Prueba Práctica para el cargo de Simulador/Modelador del Instituto de Evaluación Tecnológica en Salud (IETS), por parte de Maria Camila Tavera Cifuentes, haciendo uso del paquete [*heemod*](https://cran.r-project.org/web/packages/heemod/index.html).
 
-La prueba presenta una situación de un fenómeno en salud teórico y busca que el aplicante genere el modelo asociado y los desarrollos pertinentes para responder las preguntas planteadas. Se puede encontrar más detalle respecto al caso planteado en `docs/Prueba_Pratica_Simulador.docx`.
+La prueba presenta una situación de un fenómeno en salud teórico y busca que el aplicante genere el modelo asociado y los desarrollos pertinentes para responder las preguntas planteadas. Se puede encontrar más detalle respecto al caso planteado en `docs/Prueba_Practica_Simulador.docx`.
 
 A continuación se presenta la estructura del proyecto.
 
