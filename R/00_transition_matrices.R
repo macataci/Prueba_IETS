@@ -19,7 +19,7 @@ states_n <- c("Desarrollo", "Crisis", "Sobrevivencia", "Muerte")
 
 # 2. Define time variables (in days)---------------------------------------------------------
 
-# Average time in mild symptoms/disease development state (D state), in days
+# Average time in disease development (mild symptoms) state (D state), in days
 tD <- 10
 
 # Average time in crisis state (C state), in days
@@ -47,8 +47,8 @@ param <- define_parameters(
   pSM = 1 - exp(-1 / tS), # Probability to M
   pSS = 1 - pSM, # Probability to stay in  S
 
-  # Quality of life at D state
-  qlD_max = 1, #  Maximum quality of life value (100%)
+  # Quality of life max value
+  qlmax = 1, #  Maximum quality of life value (100%)
 
   # Quality of life detriment
 
