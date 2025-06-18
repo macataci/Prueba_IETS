@@ -16,9 +16,7 @@
 # Date: 13/06/2025
 ############################################################
 
-# ----------------------------------------------------------
-# 1. Load required libraries
-# ----------------------------------------------------------
+# 1. Load required libraries----------------------------------------------------------
 
 # Uncomment the following line to install 'heemod' if not installed
 # install.packages("heemod")
@@ -26,9 +24,7 @@
 library(heemod)
 library(ggplot2)
 
-# ----------------------------------------------------------
-# 2. Load and run scripts in order
-# ----------------------------------------------------------
+# 2. Load and run scripts in order----------------------------------------------------------
 
 # Load transition matrices
 source("R/00_transition_matrices.R")
@@ -41,7 +37,3 @@ source("R/02_run_model.R")
 
 # Perform deterministic sensitivity analysis and generate plots
 source("R/03_sensitivity_analysis.R")
-
-############################################################
-# End of Main Script
-############################################################
