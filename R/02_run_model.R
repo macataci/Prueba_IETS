@@ -2,7 +2,7 @@
 # 02_run_model.R
 #
 # Description:
-# This script runs the model for both treatment # strategies,
+# This script runs the model for both treatments (strategies),
 # summarizes the results, and generates plots:
 #   - Accumulated quality of life over time
 #   - Number of individuals in each state over time
