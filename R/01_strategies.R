@@ -3,7 +3,7 @@
 #
 # Description:
 # This script defines:
-#   - The disease states
+#   - The disease states, including the cost and calidad_vida variablea
 #   - The treatment strategies
 #
 # Author: Maria Camila Tavera Cifuentes
@@ -15,15 +15,15 @@
 # D state
 sD <- define_state(
   cost = 0,
-  calidad_vida = qlD_max
+  calidad_vida = qlmax
 )
 
 # C state
 sC <- define_state(
   cost = 0,
   calidad_vida = dispatch_strategy(
-    tratamiento_1 = qlD_max - qlC1,
-    tratamiento_2 = qlD_max - qlC2
+    tratamiento_1 = qlmax - qlC1,
+    tratamiento_2 = qlmax - qlC2
   )
 )
 
@@ -31,15 +31,15 @@ sC <- define_state(
 sS <- define_state(
   cost = 0,
   calidad_vida = dispatch_strategy(
-    tratamiento_1 = qlD_max - qlS1,
-    tratamiento_2 = qlD_max - qlS2
+    tratamiento_1 = qlmax - qlS1,
+    tratamiento_2 = qlmax - qlS2
   )
 )
 
 # M state
 sM <- define_state(
   cost = 0,
-  calidad_vida = qlD_max - 1
+  calidad_vida = qlmax - 1
 )
 
 # 2. Define treatment strategies----------------------------------------------------------
