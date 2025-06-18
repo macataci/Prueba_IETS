@@ -28,7 +28,7 @@ Aunque para esta ocasión no se requirió cargar archivos de datos, ni se almace
 
 ## Instrucciones para correr los scripts
 
-En el archivo `main.R` se cargan las librerias necesarias y se ejecutan, en orden, todos los scipts del proyecto.
+En el archivo `main.R` se cargan las librerias necesarias y se ejecutan, en orden, todos los scipts del proyecto. Sin embargo, están comentadas las lineas de código que guardan laa figuras. 
 
 Ahora bien, si el usuario prefiere ejecutar cada script de forma individual, debe primero cargar las librerías indicadas en `main.R` y luego correr los scripts uno a uno, empezando por `00_transition_matrices.R` y siguiendo el orden númerico ascendente hasta `03_sensitivity_analysis.R`.
 
