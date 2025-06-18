@@ -22,10 +22,10 @@ states_n <- c("Desarrollo", "Crisis", "Sobrevivencia", "Muerte")
 # Average time in mild symptoms/disease development state (D state), in days
 tD <- 10
 
-# Average time in (D state), in days
+# Average time in crisis state (C state), in days
 tC <- 2 * 7 #  2 weeks converted to days
 
-# Average survival time (S state)
+# Average time in survival state (S state), in days
 tS <- 10 * 365 # 10 years converted to days
 
 # 3. Define transition probabilities----------------------------------------------------------
