@@ -108,7 +108,3 @@ plot(mat_treat2, relsize = 0.78)
 # plot(mat_treat2, relsize = 0.78)
 # title(main = "Transition Graph for Treatment 2", line = 3, cex.main = 1.5)
 # dev.off()
-
-############################################################
-# End of 00_transition_matrices.R
-############################################################
