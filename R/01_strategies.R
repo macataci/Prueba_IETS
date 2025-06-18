@@ -1,32 +1,55 @@
+############################################################
+# 01_strategies.R
+#
+# Description:
+# This script defines:
+#   - The disease states
+#   - The treatment strategies
+#
+# Author: Maria Camila Tavera Cifuentes
+# Date: 13/06/2025
+############################################################
 
+# ----------------------------------------------------------
+# 1. Define states
+# ----------------------------------------------------------
 
-# States definition
+# D state
 sD <- define_state(
   cost = 0,
-  calidad_vida = qlD
+  calidad_vida = qlD_max
 )
 
+# C state
 sC <- define_state(
-  cost = 0, 
+  cost = 0,
   calidad_vida = dispatch_strategy(
-    tratamiento_1 = qlD - qlC1,
-    tratamiento_2 = qlD - qlC2)
+    tratamiento_1 = qlD_max - qlC1,
+    tratamiento_2 = qlD_max - qlC2
+  )
 )
 
+# S state
 sS <- define_state(
   cost = 0,
   calidad_vida = dispatch_strategy(
-    tratamiento_1 = qlD - qlS1,
-    tratamiento_2 = qlD - qlS2)
+    tratamiento_1 = qlD_max - qlS1,
+    tratamiento_2 = qlD_max - qlS2
+  )
 )
 
+# M state
 sM <- define_state(
-  cost = 0, 
-  calidad_vida = qlD-1
+  cost = 0,
+  calidad_vida = qlD_max - 1
 )
 
-# Strategies
 
+# ----------------------------------------------------------
+# 2. Define treatment strategies
+# ----------------------------------------------------------
+
+# Strategy for Treatment 1
 strat_treat1 <- define_strategy(
   transition = mat_treat1,
   Desarrollo = sD,
@@ -35,6 +58,7 @@ strat_treat1 <- define_strategy(
   Muerte = sM
 )
 
+# Strategy for Treatment 2
 strat_treat2 <- define_strategy(
   transition = mat_treat2,
   Desarrollo = sD,
@@ -43,4 +67,6 @@ strat_treat2 <- define_strategy(
   Muerte = sM
 )
 
-
+############################################################
+# End of 01_strategies.R
+############################################################
